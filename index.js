@@ -1,4 +1,4 @@
-let s = new p5(( sketch ) => {
+const s = ( sketch ) => {
   
 let snowFlakesX = []
 let snowFlakesY = []
