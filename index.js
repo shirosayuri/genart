@@ -31,8 +31,8 @@ sketch.draw = function() {
     let r = snowFlakesR[counter]
     sketch.fill(`rgba(255,255,255,${o})`)
     sketch.circle(x,y,r)
-    snowFlakesY[counter] += o + o * sin(sketch.frameCount/60+counter)
-    snowFlakesX[counter] += sin(sketch.frameCount/60+counter) + o*10*sin(sketch.frameCount/600)
+    snowFlakesY[counter] += o + o * sketch.sin(sketch.frameCount/60+counter)
+    snowFlakesX[counter] += sketch.sin(sketch.frameCount/60+counter) + o*10*sketch.sin(sketch.frameCount/600)
     
     counter += 1
   
